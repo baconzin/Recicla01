@@ -1,23 +1,21 @@
 import { Link } from "react-router-dom";
-import { MapPin, Award, Users, Truck, ShieldCheck, ArrowRight, CheckCircle } from "lucide-react";
+import { MapPin, Award, Users, Truck, ShieldCheck, ArrowRight, CheckCircle, HardHat, Globe } from "lucide-react";
 
 export default function Sobre() {
   return (
     <div>
-      {/* Hero */}
       <section className="bg-[#1E293B] py-20 md:py-28 relative noise-overlay">
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Sobre Nos</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Sobre a Empresa</span>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight mt-3" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
             Usina Recicla
           </h1>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl">
-            Gestao integrada de residuos solidos e efluentes liquidos com expertise e transparencia contratual.
+            Coleta, transporte e destinacao de residuos industriais e efluentes com expertise tecnica e conformidade ambiental. Atendimento em todo o Brasil.
           </p>
         </div>
       </section>
 
-      {/* Company Info */}
       <section className="bg-[#F8FAFC] py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -26,21 +24,23 @@ export default function Sobre() {
                 Quem Somos
               </h2>
               <p className="mt-6 text-slate-600 leading-relaxed">
-                A Usina Recicla e uma empresa especializada em coleta, transporte e destinacao ambientalmente correta de residuos industriais e efluentes. Sediada em Rio Claro/SP, atendemos industrias e grandes geradores em todo o interior do Estado de Sao Paulo.
+                A Usina Recicla e uma empresa especializada em coleta, transporte e destinacao ambientalmente correta de residuos industriais e efluentes. Atendemos empresas e industrias em todo o Brasil que precisam descartar residuos e efluentes com seguranca ambiental e documentacao completa.
               </p>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Nossa operacao combina conhecimento tecnico ambiental com gestao empresarial de excelencia, garantindo que cada cliente receba um servico sob medida, com total conformidade legal e eficiencia operacional.
+                Nossa operacao combina conhecimento tecnico ambiental com gestao empresarial de excelencia. Contamos com engenheiro ambiental responsavel, frota propria de caminhoes-tanque com alto vacuo e uma estrutura completa de documentacao ambiental que garante a isencao total de passivos para sua empresa.
               </p>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Contamos com frota propria de caminhoes-tanque com alto vacuo, equipe tecnica especializada e uma estrutura completa de documentacao ambiental que garante a isencao total de passivos para sua empresa.
+                Atuamos em conformidade com a CETESB, a Politica Nacional de Residuos Solidos e toda a legislacao ambiental brasileira, emitindo MTR, CDF e CADRI para cada operacao.
               </p>
 
               <div className="mt-10 grid grid-cols-2 gap-6">
                 {[
-                  { icon: MapPin, label: "Rio Claro, SP" },
+                  { icon: Globe, label: "Atendimento Nacional" },
                   { icon: Truck, label: "Frota Propria" },
                   { icon: ShieldCheck, label: "Conformidade Total" },
+                  { icon: HardHat, label: "Eng. Ambiental" },
                   { icon: Award, label: "Expertise Tecnica" },
+                  { icon: MapPin, label: "Sede em Sao Paulo" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-[#0D9488]/10 flex items-center justify-center shrink-0">
@@ -72,10 +72,10 @@ export default function Sobre() {
                   A Usina Recicla conta com a expertise do CEO Raphael Pascon, que traz sua solida trajetoria na gestao de condominios e administracao de empresas de construcao civil no interior de Sao Paulo para garantir a maxima eficiencia logistica e transparencia contratual.
                 </p>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  Com experiencia consolidada na gestao de operacoes complexas, Raphael trouxe para a Usina Recicla os mesmos principios de excelencia operacional, controle rigoroso de processos e compromisso com resultados que marcaram sua trajetoria no setor de construcao civil.
+                  Com experiencia consolidada na gestao de operacoes complexas, Raphael trouxe para a Usina Recicla os mesmos principios de excelencia operacional, controle rigoroso de processos e compromisso com resultados que marcaram sua trajetoria.
                 </p>
                 <blockquote className="mt-8 border-l-4 border-[#0D9488] pl-5 italic text-slate-600">
-                  "Tratamos a gestao de residuos com o mesmo rigor tecnico e compromisso que aplicamos em qualquer operacao industrial de grande porte. Cada cliente recebe atencao personalizada e documentacao impecavel."
+                  "Tratamos a gestao de residuos com o mesmo rigor tecnico e compromisso que aplicamos em qualquer operacao industrial de grande porte. Cada empresa atendida recebe documentacao impecavel e conformidade total."
                 </blockquote>
               </div>
             </div>
@@ -88,18 +88,9 @@ export default function Sobre() {
             </h2>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                {
-                  title: "Conformidade Legal",
-                  desc: "Atuamos em total conformidade com a legislacao ambiental vigente, garantindo a regularizacao de cada operacao junto aos orgaos competentes.",
-                },
-                {
-                  title: "Transparencia",
-                  desc: "Documentacao completa e rastreabilidade em cada etapa do processo. Nossos clientes tem acesso total as informacoes de cada operacao.",
-                },
-                {
-                  title: "Eficiencia Operacional",
-                  desc: "Logistica otimizada, frota propria e equipe especializada para atender demandas de qualquer porte com agilidade e qualidade.",
-                },
+                { title: "Conformidade Ambiental", desc: "Atuamos em total conformidade com CETESB, SINIR e a Politica Nacional de Residuos Solidos, com engenheiro ambiental responsavel." },
+                { title: "Transparencia e Rastreabilidade", desc: "Documentacao completa e monitoramento em cada etapa. Acesso total as informacoes de cada operacao com MTR, CDF e relatorios." },
+                { title: "Eficiencia Operacional", desc: "Logistica otimizada, frota propria e equipe tecnica especializada para atender demandas de qualquer porte em todo o Brasil." },
               ].map((item) => (
                 <div key={item.title} className="bg-white border border-slate-200 p-8">
                   <h3 className="text-xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -111,10 +102,9 @@ export default function Sobre() {
             </div>
           </div>
 
-          {/* CTA */}
           <div className="mt-16 text-center">
             <a
-              href="https://wa.me/5519971636969"
+              href="https://wa.me/5519971636969?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20coleta%20de%20res%C3%ADduos."
               target="_blank"
               rel="noopener noreferrer"
               data-testid="sobre-cta"

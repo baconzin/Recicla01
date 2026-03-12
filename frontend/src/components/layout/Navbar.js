@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-const LOGO_URL = "https://customer-assets.emergentagent.com/job_cd024dda-176e-42e4-8e0d-6d0bd589957d/artifacts/grvncrp2_Usina%20Recicla%20Logo.png";
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_usina-recicla-tech/artifacts/o9r6pl89_image.png";
 
 const navLinks = [
   { label: "Inicio", href: "/" },
@@ -10,13 +10,15 @@ const navLinks = [
     label: "Servicos",
     href: "/servicos",
     children: [
-      { label: "Coleta de Efluentes", href: "/coleta-de-efluentes" },
-      { label: "Gestao de Residuos", href: "/gestao-de-residuos" },
+      { label: "Coleta de Efluentes Industriais", href: "/coleta-de-efluentes" },
+      { label: "Gestao de Residuos Industriais", href: "/gestao-de-residuos" },
+      { label: "Transporte de Residuos Classe I", href: "/transporte-de-residuos-classe-i" },
       { label: "Documentacao Ambiental", href: "/documentacao-ambiental" },
+      { label: "MTR - Manifesto de Transporte", href: "/mtr-manifesto-transporte-residuos" },
+      { label: "CADRI - Certificado CETESB", href: "/cadri-certificado-movimentacao-residuos" },
     ],
   },
   { label: "Sobre", href: "/sobre" },
-  { label: "Blog", href: "/blog" },
 ];
 
 export const Navbar = () => {
@@ -36,6 +38,10 @@ export const Navbar = () => {
     setDropdownOpen(false);
   }, [location]);
 
+  const isServiceActive = ["/servicos", "/coleta", "/gestao", "/transporte", "/documentacao", "/mtr", "/cadri"].some(
+    (p) => location.pathname.includes(p)
+  );
+
   return (
     <nav
       data-testid="navbar"
@@ -51,8 +57,8 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center gap-3" data-testid="nav-logo">
             <img
               src={LOGO_URL}
-              alt="Usina Recicla"
-              className="h-12 w-auto"
+              alt="Usina Recicla - Gestao de Residuos Industriais e Efluentes"
+              className="h-14 w-auto"
               loading="eager"
             />
             <div className="hidden sm:block">
@@ -78,9 +84,7 @@ export const Navbar = () => {
                   <button
                     data-testid="nav-services"
                     className={`flex items-center gap-1 text-sm font-medium uppercase tracking-wide transition-colors ${
-                      location.pathname.includes("servic") || location.pathname.includes("coleta") || location.pathname.includes("gestao") || location.pathname.includes("documentacao")
-                        ? "text-[#0D9488]"
-                        : "text-slate-600 hover:text-[#0D9488]"
+                      isServiceActive ? "text-[#0D9488]" : "text-slate-600 hover:text-[#0D9488]"
                     }`}
                   >
                     {link.label}
@@ -88,11 +92,11 @@ export const Navbar = () => {
                   </button>
                   {dropdownOpen && (
                     <div className="absolute top-full left-0 pt-2 animate-fade-in">
-                      <div className="bg-white border border-slate-200 shadow-lg py-2 min-w-[240px]">
+                      <div className="bg-white border border-slate-200 shadow-lg py-2 min-w-[300px]">
                         <Link
                           to={link.href}
                           data-testid="nav-servicos-all"
-                          className="block px-5 py-2.5 text-sm text-slate-600 hover:text-[#0D9488] hover:bg-slate-50 font-medium"
+                          className="block px-5 py-2.5 text-sm text-slate-700 hover:text-[#0D9488] hover:bg-slate-50 font-medium border-b border-slate-100"
                         >
                           Todos os Servicos
                         </Link>
@@ -126,13 +130,13 @@ export const Navbar = () => {
               )
             )}
             <a
-              href="https://wa.me/5519971636969"
+              href="https://wa.me/5519971636969?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20coleta%20de%20res%C3%ADduos."
               target="_blank"
               rel="noopener noreferrer"
               data-testid="nav-cta-whatsapp"
               className="bg-[#0D9488] text-white hover:bg-[#115E59] h-11 px-7 text-sm font-bold uppercase tracking-wider inline-flex items-center transition-colors"
             >
-              Solicitar Orcamento
+              Solicitar Coleta
             </a>
           </div>
 
@@ -158,7 +162,7 @@ export const Navbar = () => {
                   >
                     {link.label}
                   </Link>
-                  <div className="pl-4 border-l-2 border-slate-200 ml-2">
+                  <div className="pl-4 border-l-2 border-slate-200 ml-2 space-y-1">
                     {link.children.map((child) => (
                       <Link
                         key={child.href}
@@ -181,12 +185,12 @@ export const Navbar = () => {
               )
             )}
             <a
-              href="https://wa.me/5519971636969"
+              href="https://wa.me/5519971636969?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20coleta%20de%20res%C3%ADduos."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 block bg-[#0D9488] text-white text-center py-3 text-sm font-bold uppercase tracking-wider"
             >
-              Solicitar Orcamento
+              Solicitar Coleta ou Orcamento
             </a>
           </div>
         )}

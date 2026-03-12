@@ -8,10 +8,11 @@ import Home from "./pages/Home";
 import Servicos from "./pages/Servicos";
 import ColetaEfluentes from "./pages/ColetaEfluentes";
 import GestaoResiduos from "./pages/GestaoResiduos";
+import TransporteResiduos from "./pages/TransporteResiduos";
 import DocumentacaoAmbiental from "./pages/DocumentacaoAmbiental";
+import MtrPage from "./pages/MtrPage";
+import CadriPage from "./pages/CadriPage";
 import Sobre from "./pages/Sobre";
-import Blog from "./pages/Blog";
-import BlogArticle from "./pages/BlogArticle";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,10 +34,11 @@ function App() {
             <Route path="/servicos" element={<Servicos />} />
             <Route path="/coleta-de-efluentes" element={<ColetaEfluentes />} />
             <Route path="/gestao-de-residuos" element={<GestaoResiduos />} />
+            <Route path="/transporte-de-residuos-classe-i" element={<TransporteResiduos />} />
             <Route path="/documentacao-ambiental" element={<DocumentacaoAmbiental />} />
+            <Route path="/mtr-manifesto-transporte-residuos" element={<MtrPage />} />
+            <Route path="/cadri-certificado-movimentacao-residuos" element={<CadriPage />} />
             <Route path="/sobre" element={<Sobre />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogArticle />} />
           </Routes>
         </main>
         <Footer />
