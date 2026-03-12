@@ -9,19 +9,19 @@ export default function TransporteResiduos() {
           <div className="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <Link to="/" className="hover:text-[#2DD4BF] transition-colors">Inicio</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/servicos" className="hover:text-[#2DD4BF] transition-colors">Servicos</Link>
+            <Link to="/servicos" className="hover:text-[#2DD4BF] transition-colors">Serviços</Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-[#2DD4BF]">Transporte de Residuos Classe I</span>
+            <span className="text-[#2DD4BF]">Transporte de Resíduos Classe I</span>
           </div>
           <div className="flex items-center gap-3 mb-4">
             <Truck className="w-8 h-8 text-[#2DD4BF]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Servico Especializado</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Serviço Especializado</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            Transporte de Residuos Classe I
+            Transporte de Resíduos Classe I
           </h1>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl">
-            Transporte licenciado de residuos perigosos com rastreabilidade completa, documentacao ambiental obrigatoria e conformidade total com a legislacao.
+            Transporte licenciado de resíduos perigosos com rastreabilidade completa, documentacao ambiental obrigatória e conformidade total com a legislação.
           </p>
         </div>
       </section>
@@ -32,16 +32,16 @@ export default function TransporteResiduos() {
             <div className="lg:col-span-2 space-y-12">
               <div>
                 <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  O Que Sao Residuos Classe I
+                  O Que Sao Resíduos Classe I
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  Residuos Classe I sao classificados como perigosos conforme a NBR 10004 da ABNT. Apresentam caracteristicas como inflamabilidade, corrosividade, reatividade, toxicidade ou patogenicidade, exigindo manuseio, transporte e destinacao especializados para proteger a saude publica e o meio ambiente.
+                  Resíduos Classe I sao classificados como perigosos conforme a NBR 10004 da ABNT. Apresentam características como inflamabilidade, corrosividade, reatividade, toxicidade ou patogenicidade, exigindo manuseio, transporte e destinacao especializados para proteger a saúde publica e o meio ambiente.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Tipos de Residuos Classe I Transportados
+                  Tipos de Resíduos Classe I Transportados
                 </h2>
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
@@ -51,8 +51,8 @@ export default function TransporteResiduos() {
                     "Residuos de galvanoplastia",
                     "Materiais com metais pesados",
                     "Embalagens contaminadas",
-                    "Residuos de processos quimicos",
-                    "Lampadas fluorescentes e com mercurio",
+                    "Residuos de processos químicos",
+                    "Lâmpadas fluorescentes e com mercúrio",
                     "Baterias e pilhas industriais",
                     "Residuos de laboratorio",
                   ].map((item) => (
@@ -69,17 +69,17 @@ export default function TransporteResiduos() {
                   Requisitos Legais Para o Transporte
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  O transporte de residuos perigosos no Brasil e regulamentado pela Resolucao CONAMA 420, pelo Decreto 96.044 e pela NBR 13221. A empresa transportadora deve possuir licenca ambiental especifica, MOPP (Movimentacao e Operacao de Produtos Perigosos) dos motoristas, e veiculo adequado com sinalizacao conforme normas vigentes.
+                  O transporte de resíduos perigosos no Brasil e regulamentado pela Resolucao CONAMA 420, pelo Decreto 96.044 e pela NBR 13221. A empresa transportadora deve possuir licença ambiental específica, MOPP (Movimentacao e Operacao de Produtos Perigosos) dos motoristas, e veículo adequado com sinalizacao conforme normas vigentes.
                 </p>
                 <div className="mt-6 space-y-3">
                   {[
-                    "Licenca ambiental para transporte de residuos perigosos",
+                    "Licença ambiental para transporte de resíduos perigosos",
                     "MOPP dos motoristas (Movimentacao de Produtos Perigosos)",
-                    "Veiculos sinalizados conforme NBR 7500",
-                    "Kit de emergencia ambiental a bordo",
+                    "Veículos sinalizados conforme NBR 7500",
+                    "Kit de emergência ambiental a bordo",
                     "Plano de contingencia para acidentes",
-                    "Seguro ambiental obrigatorio",
-                    "Emissao de MTR antes do embarque",
+                    "Seguro ambiental obrigatório",
+                    "Emissão de MTR antes do embarque",
                     "CADRI quando aplicavel (Estado de SP)",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
@@ -96,7 +96,7 @@ export default function TransporteResiduos() {
                   <div>
                     <h3 className="font-bold text-amber-900 text-lg">Penalidades por Transporte Irregular</h3>
                     <p className="mt-2 text-amber-800 text-sm leading-relaxed">
-                      O transporte irregular de residuos perigosos configura crime ambiental (Lei 9.605/98) e infracao administrativa, com multas que podem chegar a R$ 50 milhoes, apreensao do veiculo e responsabilizacao criminal do gerador e transportador.
+                      O transporte irregular de resíduos perigosos configura crime ambiental (Lei 9.605/98) e infração administrativa, com multas que podem chegar a R$ 50 milhoes, apreensão do veículo e responsabilização criminal do gerador e transportador.
                     </p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ export default function TransporteResiduos() {
                 </h3>
                 <div className="mt-6 space-y-4">
                   {[
-                    { icon: Truck, text: "Veiculos licenciados e rastreados" },
+                    { icon: Truck, text: "Veículos licenciados e rastreados" },
                     { icon: ShieldCheck, text: "Conformidade com NBR 13221" },
                     { icon: FileCheck, text: "MTR e CADRI emitidos" },
                     { icon: MapPin, text: "Atendimento em todo o Brasil" },
@@ -125,10 +125,10 @@ export default function TransporteResiduos() {
 
               <div className="bg-[#0D9488] p-8 text-white">
                 <h3 className="text-lg font-bold uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Solicite um Orcamento
+                  Solicite um Orçamento
                 </h3>
                 <p className="mt-3 text-white/80 text-sm">
-                  Transporte seguro e licenciado para residuos perigosos da sua empresa.
+                  Transporte seguro e licenciado para resíduos perigosos da sua empresa.
                 </p>
                 <a
                   href="https://wa.me/5519971636969?text=Ol%C3%A1%2C%20preciso%20de%20transporte%20de%20res%C3%ADduos%20Classe%20I."
@@ -143,17 +143,17 @@ export default function TransporteResiduos() {
 
               <div className="bg-white border border-slate-200 p-8">
                 <h3 className="text-lg font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Outros Servicos
+                  Outros Serviços
                 </h3>
                 <div className="mt-4 space-y-3">
                   <Link to="/coleta-de-efluentes" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
                     <ChevronRight className="w-4 h-4" /> Coleta de Efluentes Industriais
                   </Link>
                   <Link to="/gestao-de-residuos" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Gestao de Residuos Industriais
+                    <ChevronRight className="w-4 h-4" /> Gestão de Resíduos Industriais
                   </Link>
                   <Link to="/documentacao-ambiental" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Documentacao Ambiental
+                    <ChevronRight className="w-4 h-4" /> Documentação Ambiental
                   </Link>
                 </div>
               </div>

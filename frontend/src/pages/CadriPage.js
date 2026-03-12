@@ -10,19 +10,19 @@ export default function CadriPage() {
           <div className="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <Link to="/" className="hover:text-[#2DD4BF] transition-colors">Inicio</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/documentacao-ambiental" className="hover:text-[#2DD4BF] transition-colors">Documentacao Ambiental</Link>
+            <Link to="/documentacao-ambiental" className="hover:text-[#2DD4BF] transition-colors">Documentação Ambiental</Link>
             <ChevronRight className="w-3 h-3" />
             <span className="text-[#2DD4BF]">CADRI</span>
           </div>
           <div className="flex items-center gap-3 mb-4">
             <ShieldCheck className="w-8 h-8 text-[#2DD4BF]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Certificacao CETESB</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Certificação CETESB</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            CADRI - Certificado de Movimentacao de Residuos
+            CADRI - Certificado de Movimentação de Resíduos
           </h1>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl">
-            Autorizacao da CETESB para movimentacao de residuos de interesse ambiental no Estado de Sao Paulo. Suporte completo na obtencao e renovacao.
+            Autorização da CETESB para movimentação de resíduos de interesse ambiental no Estado de São Paulo. Suporte completo na obtenção e renovação.
           </p>
         </div>
       </section>
@@ -36,10 +36,10 @@ export default function CadriPage() {
                   O Que e o CADRI
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  O CADRI (Certificado de Movimentacao de Residuos de Interesse Ambiental) e o documento emitido pela CETESB (Companhia Ambiental do Estado de Sao Paulo) que aprova o encaminhamento de residuos de interesse ambiental a locais de reprocessamento, armazenamento, tratamento ou disposicao final, licenciados ou autorizados pela CETESB.
+                  O CADRI (Certificado de Movimentação de Resíduos de Interesse Ambiental) e o documento emitido pela CETESB (Companhia Ambiental do Estado de São Paulo) que aprova o encaminhamento de resíduos de interesse ambiental a locais de reprocessamento, armazenamento, tratamento ou disposição final, licenciados ou autorizados pela CETESB.
                 </p>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  E regulamentado pela Resolucao SMA 38/2011 e obrigatorio para empresas no Estado de Sao Paulo que movimentam residuos classificados como de interesse ambiental.
+                  E regulamentado pela Resolucao SMA 38/2011 e obrigatório para empresas no Estado de São Paulo que movimentam residuos classificados como de interesse ambiental.
                 </p>
               </div>
 
@@ -50,12 +50,12 @@ export default function CadriPage() {
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
                     "Residuos industriais perigosos (Classe I)",
-                    "Residuos de servicos de saude",
+                    "Residuos de servicos de saúde",
                     "Oleos lubrificantes usados",
                     "Pilhas e baterias industriais",
-                    "Pneus insevivels",
-                    "Lampadas com mercurio",
-                    "Residuos de construcao contaminados",
+                    "Pneus inservíveis",
+                    "Lâmpadas com mercúrio",
+                    "Residuos de construção contaminados",
                     "Efluentes industriais perigosos",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3 bg-white border border-slate-200 p-4">
@@ -71,15 +71,15 @@ export default function CadriPage() {
                   Como Solicitar o CADRI
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  A solicitacao e feita online pelo sistema da CETESB. A Usina Recicla presta suporte completo em todo o processo:
+                  A solicitação e feita online pelo sistema da CETESB. A Usina Recicla presta suporte completo em todo o processo:
                 </p>
                 <div className="mt-6 space-y-4">
                   {[
-                    { step: "01", text: "Identificacao e classificacao dos residuos da sua empresa" },
+                    { step: "01", text: "Identificacao e classificação dos residuos da sua empresa" },
                     { step: "02", text: "Preparacao da documentacao tecnica necessaria" },
-                    { step: "03", text: "Submissao da solicitacao junto a CETESB" },
-                    { step: "04", text: "Acompanhamento da analise ate a aprovacao" },
-                    { step: "05", text: "Obtencao do certificado e inicio das operacoes" },
+                    { step: "03", text: "Submissao da solicitação junto a CETESB" },
+                    { step: "04", text: "Acompanhamento da análise ate a aprovacao" },
+                    { step: "05", text: "Obtenção do certificado e inicio das operacoes" },
                   ].map((item) => (
                     <div key={item.step} className="flex items-center gap-4 bg-white border border-slate-200 p-4">
                       <span className="text-2xl font-extrabold text-[#0D9488]/30" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{item.step}</span>
@@ -91,10 +91,10 @@ export default function CadriPage() {
 
               <div>
                 <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Validade e Renovacao
+                  Validade e Renovação
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  O CADRI possui validade definida pela CETESB, geralmente de 1 a 2 anos, podendo ser renovado mediante nova solicitacao antes do vencimento. A operacao sem CADRI valido sujeita a empresa a autuacoes e multas ambientais. A Usina Recicla acompanha o prazo de validade e auxilia na renovacao.
+                  O CADRI possui validade definida pela CETESB, geralmente de 1 a 2 anos, podendo ser renovado mediante nova solicitação antes do vencimento. A operação sem CADRI valido sujeita a empresa a autuações e multas ambientais. A Usina Recicla acompanha o prazo de validade e auxilia na renovação.
                 </p>
               </div>
 
@@ -105,10 +105,10 @@ export default function CadriPage() {
                 </h2>
                 <Accordion type="single" collapsible className="mt-6 space-y-3">
                   {[
-                    { q: "Quanto tempo demora para obter o CADRI?", a: "O prazo medio de analise pela CETESB e de 15 a 30 dias uteis, podendo variar conforme a complexidade do residuo e a demanda do orgao." },
-                    { q: "O CADRI e obrigatorio em outros estados?", a: "O CADRI e especifico do Estado de Sao Paulo. Outros estados possuem documentos similares emitidos por seus respectivos orgaos ambientais." },
-                    { q: "Posso transportar residuo sem CADRI?", a: "Nao. O transporte de residuos de interesse ambiental sem CADRI valido configura infracao ambiental, sujeita a multas e outras sancoes administrativas." },
-                    { q: "O CADRI substitui o MTR?", a: "Nao. O CADRI autoriza a movimentacao do residuo, enquanto o MTR rastreia o transporte efetivo. Ambos sao obrigatorios e complementares." },
+                    { q: "Quanto tempo demora para obter o CADRI?", a: "O prazo medio de análise pela CETESB e de 15 a 30 dias uteis, podendo variar conforme a complexidade do residuo e a demanda do órgão." },
+                    { q: "O CADRI e obrigatório em outros estados?", a: "O CADRI e específico do Estado de São Paulo. Outros estados possuem documentos similares emitidos por seus respectivos órgãos ambientais." },
+                    { q: "Posso transportar residuo sem CADRI?", a: "Não. O transporte de resíduos de interesse ambiental sem CADRI valido configura infração ambiental, sujeita a multas e outras sanções administrativas." },
+                    { q: "O CADRI substitui o MTR?", a: "Não. O CADRI autoriza a movimentacao do residuo, enquanto o MTR rastreia o transporte efetivo. Ambos sao obrigatórios e complementares." },
                   ].map((faq, i) => (
                     <AccordionItem key={i} value={`cadri-faq-${i}`} className="bg-white border border-slate-200 px-5">
                       <AccordionTrigger className="text-left font-bold text-[#1E293B] hover:text-[#0D9488] py-4">{faq.q}</AccordionTrigger>
@@ -127,9 +127,9 @@ export default function CadriPage() {
                 <div className="mt-6 space-y-4">
                   {[
                     { icon: Building2, text: "Emitido pela CETESB" },
-                    { icon: ShieldCheck, text: "Obrigatorio em Sao Paulo" },
+                    { icon: ShieldCheck, text: "Obrigatório em São Paulo" },
                     { icon: Clock, text: "Validade de 1 a 2 anos" },
-                    { icon: FileCheck, text: "Renovacao antes do vencimento" },
+                    { icon: FileCheck, text: "Renovação antes do vencimento" },
                   ].map((item) => (
                     <div key={item.text} className="flex items-center gap-3">
                       <item.icon className="w-5 h-5 text-[#2DD4BF] shrink-0" />
@@ -144,7 +144,7 @@ export default function CadriPage() {
                   Precisa de CADRI?
                 </h3>
                 <p className="mt-3 text-white/80 text-sm">
-                  A Usina Recicla presta suporte completo na obtencao e renovacao do CADRI junto a CETESB.
+                  A Usina Recicla presta suporte completo na obtenção e renovação do CADRI junto a CETESB.
                 </p>
                 <a
                   href="https://wa.me/5519971636969?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20para%20obten%C3%A7%C3%A3o%20de%20CADRI."
@@ -159,17 +159,17 @@ export default function CadriPage() {
 
               <div className="bg-white border border-slate-200 p-8">
                 <h3 className="text-lg font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Documentacao Relacionada
+                  Documentação Relacionada
                 </h3>
                 <div className="mt-4 space-y-3">
                   <Link to="/mtr-manifesto-transporte-residuos" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
                     <ChevronRight className="w-4 h-4" /> MTR - Manifesto de Transporte
                   </Link>
                   <Link to="/documentacao-ambiental" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Documentacao Ambiental Completa
+                    <ChevronRight className="w-4 h-4" /> Documentação Ambiental Completa
                   </Link>
                   <Link to="/servicos" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Todos os Servicos
+                    <ChevronRight className="w-4 h-4" /> Todos os Serviços
                   </Link>
                 </div>
               </div>

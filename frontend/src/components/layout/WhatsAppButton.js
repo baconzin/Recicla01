@@ -28,7 +28,7 @@ export const WhatsAppButton = () => {
       {showTooltip && (
         <div className="absolute bottom-full right-0 mb-3 animate-fade-in">
           <div className="bg-white text-slate-800 text-sm font-medium px-4 py-2.5 shadow-lg border border-slate-200 whitespace-nowrap">
-            Solicite um Orcamento Tecnico
+            Solicite um Orçamento Técnico
             <div className="absolute top-full right-6 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-white"></div>
           </div>
         </div>
@@ -39,7 +39,7 @@ export const WhatsAppButton = () => {
         href="https://wa.me/5519971636969"
         target="_blank"
         rel="noopener noreferrer"
-        title="Solicite um Orcamento Tecnico"
+        title="Solicite um Orçamento Técnico"
         className="relative flex items-center justify-center w-16 h-16 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}

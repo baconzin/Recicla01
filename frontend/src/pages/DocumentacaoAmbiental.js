@@ -10,19 +10,19 @@ export default function DocumentacaoAmbiental() {
           <div className="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <Link to="/" className="hover:text-[#2DD4BF] transition-colors">Inicio</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/servicos" className="hover:text-[#2DD4BF] transition-colors">Servicos</Link>
+            <Link to="/servicos" className="hover:text-[#2DD4BF] transition-colors">Serviços</Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-[#2DD4BF]">Documentacao Ambiental</span>
+            <span className="text-[#2DD4BF]">Documentação Ambiental</span>
           </div>
           <div className="flex items-center gap-3 mb-4">
             <FileCheck className="w-8 h-8 text-[#2DD4BF]" />
             <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Conformidade Legal</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            Documentacao Ambiental Completa
+            Documentação Ambiental Completa
           </h1>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl">
-            Regularizacao junto a CETESB e SINIR com emissao de laudos tecnicos, MTR, CDF e suporte completo para CADRI.
+            Regularização junto a CETESB e SINIR com emissão de laudos tecnicos, MTR, CDF e suporte completo para CADRI.
           </p>
         </div>
       </section>
@@ -40,16 +40,16 @@ export default function DocumentacaoAmbiental() {
               <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                 MTR
               </h2>
-              <p className="text-sm text-[#0D9488] font-medium mt-1">Manifesto de Transporte de Residuos</p>
+              <p className="text-sm text-[#0D9488] font-medium mt-1">Manifesto de Transporte de Resíduos</p>
               <p className="mt-4 text-slate-600 leading-relaxed text-sm">
-                Documento obrigatorio que rastreia o residuo desde a origem ate a destinacao final. Emitido eletronicamente pelo sistema SINIR, o MTR e o &quot;passaporte&quot; do residuo, registrando todas as informacoes sobre gerador, transportador e destinador.
+                Documento obrigatório que rastreia o residuo desde a origem ate a destinação final. Emitido eletrônicamente pelo sistema SINIR, o MTR e o &quot;passaporte&quot; do residuo, registrando todas as informações sobre gerador, transportador e destinador.
               </p>
               <div className="mt-6 space-y-3">
                 {[
-                  "Emissao obrigatoria em todo territorio nacional",
-                  "Registro eletronico no sistema SINIR",
+                  "Emissão obrigatória em todo território nacional",
+                  "Registro eletrônico no sistema SINIR",
                   "Rastreabilidade completa da carga",
-                  "Obrigatorio desde 2021 (Portaria MMA 280/2020)",
+                  "Obrigatório desde 2021 (Portaria MMA 280/2020)",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-[#0D9488] shrink-0 mt-0.5" />
@@ -67,15 +67,15 @@ export default function DocumentacaoAmbiental() {
               <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                 CDF
               </h2>
-              <p className="text-sm text-[#0D9488] font-medium mt-1">Certificado de Destinacao Final</p>
+              <p className="text-sm text-[#0D9488] font-medium mt-1">Certificado de Destinação Final</p>
               <p className="mt-4 text-slate-600 leading-relaxed text-sm">
-                Comprova que o residuo foi destinado de forma ambientalmente correta. O CDF e o documento que isenta sua empresa de passivos ambientais futuros, comprovando a destinacao adequada perante orgaos fiscalizadores.
+                Comprova que o residuo foi destinado de forma ambientalmente correta. O CDF e o documento que isenta sua empresa de passivos ambientais futuros, comprovando a destinação adequada perante órgãos fiscalizadores.
               </p>
               <div className="mt-6 space-y-3">
                 {[
-                  "Comprova destinacao ambientalmente correta",
+                  "Comprova destinação ambientalmente correta",
                   "Isenta a empresa de passivos ambientais",
-                  "Valido perante orgaos fiscalizadores",
+                  "Valido perante órgãos fiscalizadores",
                   "Emitido apos confirmacao de destinacao",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-sm text-slate-600">
@@ -94,16 +94,16 @@ export default function DocumentacaoAmbiental() {
               <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                 CADRI
               </h2>
-              <p className="text-sm text-[#0D9488] font-medium mt-1">Certificado de Movimentacao de Residuos</p>
+              <p className="text-sm text-[#0D9488] font-medium mt-1">Certificado de Movimentação de Resíduos</p>
               <p className="mt-4 text-slate-600 leading-relaxed text-sm">
-                Autorizacao emitida pela CETESB para movimentacao de residuos de interesse ambiental no Estado de Sao Paulo. Obrigatorio para empresas que transportam residuos perigosos e de interesse ambiental.
+                Autorização emitida pela CETESB para movimentação de resíduos de interesse ambiental no Estado de São Paulo. Obrigatório para empresas que transportam resíduos perigosos e de interesse ambiental.
               </p>
               <div className="mt-6 space-y-3">
                 {[
                   "Emitido pela CETESB",
-                  "Obrigatorio no Estado de Sao Paulo",
+                  "Obrigatório no Estado de São Paulo",
                   "Validade de 1 a 2 anos",
-                  "Suporte completo na obtencao",
+                  "Suporte completo na obtenção",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2 text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-[#0D9488] shrink-0 mt-0.5" />
@@ -120,7 +120,7 @@ export default function DocumentacaoAmbiental() {
             <div>
               <h3 className="font-bold text-amber-900 text-lg">Atencao: Penalidades por Irregularidade</h3>
               <p className="mt-2 text-amber-800 text-sm leading-relaxed">
-                O descarte irregular de residuos configura crime ambiental previsto na Lei 9.605/98, com multas de ate R$ 50 milhoes, interdicao da atividade, e responsabilizacao civil e criminal dos administradores. A Usina Recicla garante total conformidade documental para proteger sua empresa.
+                O descarte irregular de residuos configura crime ambiental previsto na Lei 9.605/98, com multas de ate R$ 50 milhoes, interdição da atividade, e responsabilização civil e criminal dos administradores. A Usina Recicla garante total conformidade documental para proteger sua empresa.
               </p>
             </div>
           </div>
@@ -128,16 +128,16 @@ export default function DocumentacaoAmbiental() {
           {/* Additional Services */}
           <div className="mt-16">
             <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-              Servicos Adicionais de Documentacao
+              Serviços Adicionais de Documentacao
             </h2>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: "Laudos Tecnicos", desc: "Emissao de laudos de classificacao de residuos conforme NBR 10004" },
-                { title: "Plano de Gerenciamento", desc: "Elaboracao de PGRS conforme Politica Nacional de Residuos Solidos" },
-                { title: "Cadastro SINIR", desc: "Suporte para cadastro e operacao no sistema SINIR" },
-                { title: "Regularizacao CETESB", desc: "Assessoria para regularizacao ambiental junto a CETESB" },
+                { title: "Laudos Tecnicos", desc: "Emissão de laudos de classificação de residuos conforme NBR 10004" },
+                { title: "Plano de Gerenciamento", desc: "Elaboracao de PGRS conforme Política Nacional de Residuos Sólidos" },
+                { title: "Cadastro SINIR", desc: "Suporte para cadastro e operação no sistema SINIR" },
+                { title: "Regularização CETESB", desc: "Assessoria para regularização ambiental junto a CETESB" },
                 { title: "Relatorios de Rastreabilidade", desc: "Relatorios periodicos de todas as operacoes realizadas" },
-                { title: "Consultoria Ambiental", desc: "Orientacao tecnica para conformidade com legislacao ambiental" },
+                { title: "Consultoria Ambiental", desc: "Orientação tecnica para conformidade com legislação ambiental" },
               ].map((item) => (
                 <div key={item.title} className="bg-white border-l-4 border-[#0D9488] p-5">
                   <h3 className="font-bold text-[#1E293B]">{item.title}</h3>

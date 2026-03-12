@@ -10,19 +10,19 @@ export default function GestaoResiduos() {
           <div className="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <Link to="/" className="hover:text-[#2DD4BF] transition-colors">Inicio</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/servicos" className="hover:text-[#2DD4BF] transition-colors">Servicos</Link>
+            <Link to="/servicos" className="hover:text-[#2DD4BF] transition-colors">Serviços</Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-[#2DD4BF]">Gestao de Residuos</span>
+            <span className="text-[#2DD4BF]">Gestão de Resíduos</span>
           </div>
           <div className="flex items-center gap-3 mb-4">
             <Recycle className="w-8 h-8 text-[#2DD4BF]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Servico Especializado</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Serviço Especializado</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            Gestao de Residuos Solidos e Sucatas
+            Gestão de Resíduos Sólidos e Sucatas
           </h1>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl">
-            Manuseio especializado de residuos Classe I e Classe II, com triagem e reinsercao na cadeia produtiva.
+            Manuseio especializado de residuos Classe I e Classe II, com triagem e reinserção na cadeia produtiva.
           </p>
         </div>
       </section>
@@ -37,7 +37,7 @@ export default function GestaoResiduos() {
                 <div className="flex items-center gap-3 mb-4">
                   <AlertTriangle className="w-6 h-6 text-amber-500" />
                   <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                    Residuos Classe I - Perigosos
+                    Resíduos Classe I - Perigosos
                   </h2>
                 </div>
                 <p className="text-slate-600 leading-relaxed">
@@ -65,19 +65,19 @@ export default function GestaoResiduos() {
                 <div className="flex items-center gap-3 mb-4">
                   <Package className="w-6 h-6 text-[#0D9488]" />
                   <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                    Residuos Classe II - Nao Perigosos
+                    Resíduos Classe II - Não Perigosos
                   </h2>
                 </div>
                 <p className="text-slate-600 leading-relaxed">
-                  Subdivididos em Classe II-A (Nao Inertes) e Classe II-B (Inertes). Incluem residuos que podem ser biodegradaveis, combustiveis ou soluveis em agua.
+                  Subdivididos em Classe II-A (Não Inertes) e Classe II-B (Inertes). Incluem residuos que podem ser biodegradáveis, combustiveis ou soluveis em agua.
                 </p>
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
-                    "Residuos organicos industriais",
+                    "Residuos orgânicos industriais",
                     "Papeis e papeloes",
                     "Texteis e tecidos",
                     "Madeira e paletes",
-                    "Sucatas metalicas",
+                    "Sucatas metálicas",
                     "Plasticos reciclaveis",
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-2 text-sm text-slate-700">
@@ -95,12 +95,12 @@ export default function GestaoResiduos() {
                 </h2>
                 <div className="mt-6 space-y-4">
                   {[
-                    { step: "01", title: "Classificacao", text: "Identificacao e classificacao conforme NBR 10004" },
-                    { step: "02", title: "Segregacao", text: "Separacao por tipo e classe na fonte geradora" },
+                    { step: "01", title: "Classificação", text: "Identificacao e classificação conforme NBR 10004" },
+                    { step: "02", title: "Segregação", text: "Separacao por tipo e classe na fonte geradora" },
                     { step: "03", title: "Acondicionamento", text: "Embalagem adequada conforme a classe do residuo" },
-                    { step: "04", title: "Documentacao", text: "Emissao de MTR, CADRI e demais documentos" },
-                    { step: "05", title: "Transporte", text: "Coleta com veiculos licenciados e rastreados" },
-                    { step: "06", title: "Destinacao", text: "Encaminhamento para unidade autorizada (reciclagem, coprocessamento ou aterro)" },
+                    { step: "04", title: "Documentacao", text: "Emissão de MTR, CADRI e demais documentos" },
+                    { step: "05", title: "Transporte", text: "Coleta com veículos licenciados e rastreados" },
+                    { step: "06", title: "Destinação", text: "Encaminhamento para unidade autorizada (reciclagem, coprocessamento ou aterro)" },
                   ].map((item) => (
                     <div key={item.step} className="flex items-start gap-4 bg-white border border-slate-200 p-5">
                       <span className="text-2xl font-extrabold text-[#0D9488]/30 shrink-0" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{item.step}</span>
@@ -122,7 +122,7 @@ export default function GestaoResiduos() {
                 </h3>
                 <div className="mt-6 space-y-4">
                   {[
-                    "Triagem e reinsercao na cadeia produtiva",
+                    "Triagem e reinserção na cadeia produtiva",
                     "Manuseio de residuos Classe I e II",
                     "Documentacao ambiental completa",
                     "Rastreabilidade total",
@@ -138,9 +138,9 @@ export default function GestaoResiduos() {
 
               <div className="bg-[#0D9488] p-8 text-white">
                 <h3 className="text-lg font-bold uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Solicite um Orcamento
+                  Solicite um Orçamento
                 </h3>
-                <p className="mt-3 text-white/80 text-sm">Avaliacao tecnica personalizada para a gestao dos residuos da sua empresa.</p>
+                <p className="mt-3 text-white/80 text-sm">Avaliação técnica personalizada para a gestao dos residuos da sua empresa.</p>
                 <a
                   href="https://wa.me/5519971636969"
                   target="_blank"
@@ -154,14 +154,14 @@ export default function GestaoResiduos() {
 
               <div className="bg-white border border-slate-200 p-8">
                 <h3 className="text-lg font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Outros Servicos
+                  Outros Serviços
                 </h3>
                 <div className="mt-4 space-y-3">
                   <Link to="/coleta-de-efluentes" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
                     <ChevronRight className="w-4 h-4" /> Coleta de Efluentes
                   </Link>
                   <Link to="/documentacao-ambiental" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Documentacao Ambiental
+                    <ChevronRight className="w-4 h-4" /> Documentação Ambiental
                   </Link>
                 </div>
               </div>

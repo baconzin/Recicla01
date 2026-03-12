@@ -15,19 +15,19 @@ export default function ColetaEfluentes() {
           <div className="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <Link to="/" className="hover:text-[#2DD4BF] transition-colors">Inicio</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/servicos" className="hover:text-[#2DD4BF] transition-colors">Servicos</Link>
+            <Link to="/servicos" className="hover:text-[#2DD4BF] transition-colors">Serviços</Link>
             <ChevronRight className="w-3 h-3" />
             <span className="text-[#2DD4BF]">Coleta de Efluentes</span>
           </div>
           <div className="flex items-center gap-3 mb-4">
             <Droplets className="w-8 h-8 text-[#2DD4BF]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Servico Especializado</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Serviço Especializado</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
             Coleta e Transporte de Efluentes Industriais
           </h1>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl">
-            Caminhoes-tanque com alto vacuo e hidrojateamento para efluentes industriais, sanitarios e limpeza de caixas separadoras de agua e oleo. Atendimento em todo o Brasil.
+            Caminhões-tanque com alto vácuo e hidrojateamento para efluentes industriais, sanitários e limpeza de caixas separadoras de água e óleo. Atendimento em todo o Brasil.
           </p>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function ColetaEfluentes() {
                   Equipamentos de Alta Performance
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  Nossa frota e equipada com caminhoes-tanque de alto vacuo, com capacidade de 8.000 a 30.000 litros, preparados para a succao de efluentes de tanques, caixas separadoras e reservatorios industriais. Contamos tambem com equipamentos de hidrojateamento de alta pressao para desobstrucao e limpeza de tubulacoes.
+                  Nossa frota e equipada com caminhoes-tanque de alto vacuo, com capacidade de 8.000 a 30.000 litros, preparados para a succao de efluentes de tanques, caixas separadoras e reservatorios industriais. Contamos tambem com equipamentos de hidrojateamento de alta pressao para desobstrucao e limpeza de tubulações.
                 </p>
               </div>
 
@@ -53,12 +53,12 @@ export default function ColetaEfluentes() {
                 </h2>
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    "Efluentes de processos quimicos",
-                    "Efluentes sanitarios industriais",
+                    "Efluentes de processos químicos",
+                    "Efluentes sanitários industriais",
                     "Oleos e graxas de caixas separadoras",
                     "Agua contaminada de processos produtivos",
                     "Efluentes de lavagem industrial",
-                    "Residuos liquidos de tanques",
+                    "Residuos líquidos de tanques",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3 bg-white border border-slate-200 p-4">
                       <CheckCircle className="w-5 h-5 text-[#0D9488] shrink-0 mt-0.5" />
@@ -74,13 +74,13 @@ export default function ColetaEfluentes() {
                 </h2>
                 <div className="mt-6 space-y-4">
                   {[
-                    { step: "01", text: "Avaliacao tecnica do local e tipo de efluente" },
-                    { step: "02", text: "Emissao da documentacao necessaria (MTR, CADRI)" },
+                    { step: "01", text: "Avaliação técnica do local e tipo de efluente" },
+                    { step: "02", text: "Emissão da documentacao necessaria (MTR, CADRI)" },
                     { step: "03", text: "Mobilizacao da frota adequada ao volume" },
                     { step: "04", text: "Coleta com equipamentos de alto vacuo" },
                     { step: "05", text: "Transporte em caminhoes-tanque lacrados" },
-                    { step: "06", text: "Destinacao para estacao de tratamento licenciada" },
-                    { step: "07", text: "Emissao do CDF (Certificado de Destinacao Final)" },
+                    { step: "06", text: "Destinação para estacao de tratamento licenciada" },
+                    { step: "07", text: "Emissão do CDF (Certificado de Destinação Final)" },
                   ].map((item) => (
                     <div key={item.step} className="flex items-center gap-4 bg-white border border-slate-200 p-4">
                       <span className="text-2xl font-extrabold text-[#0D9488]/20" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{item.step}</span>
@@ -101,7 +101,7 @@ export default function ColetaEfluentes() {
                   {[
                     { icon: Truck, text: "Frota propria e especializada" },
                     { icon: ShieldCheck, text: "Documentacao ambiental completa" },
-                    { icon: Clock, text: "Atendimento 24h emergencial" },
+                    { icon: Clock, text: "Atendimento 24h emergêncial" },
                     { icon: Droplets, text: "Alto vacuo e hidrojateamento" },
                   ].map((item) => (
                     <div key={item.text} className="flex items-center gap-3">
@@ -114,10 +114,10 @@ export default function ColetaEfluentes() {
 
               <div className="bg-[#0D9488] p-8 text-white">
                 <h3 className="text-lg font-bold uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Solicite um Orcamento
+                  Solicite um Orçamento
                 </h3>
                 <p className="mt-3 text-white/80 text-sm">
-                  Entre em contato com nossos especialistas para uma avaliacao tecnica personalizada.
+                  Entre em contato com nossos especialistas para uma avaliação técnica personalizada.
                 </p>
                 <a
                   href="https://wa.me/5519971636969"
@@ -132,17 +132,17 @@ export default function ColetaEfluentes() {
 
               <div className="bg-white border border-slate-200 p-8">
                 <h3 className="text-lg font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Outros Servicos
+                  Outros Serviços
                 </h3>
                 <div className="mt-4 space-y-3">
                   <Link to="/gestao-de-residuos" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Gestao de Residuos Solidos
+                    <ChevronRight className="w-4 h-4" /> Gestão de Resíduos Sólidos
                   </Link>
                   <Link to="/documentacao-ambiental" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Documentacao Ambiental
+                    <ChevronRight className="w-4 h-4" /> Documentação Ambiental
                   </Link>
                   <Link to="/servicos" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Todos os Servicos
+                    <ChevronRight className="w-4 h-4" /> Todos os Serviços
                   </Link>
                 </div>
               </div>

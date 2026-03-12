@@ -10,19 +10,19 @@ export default function MtrPage() {
           <div className="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <Link to="/" className="hover:text-[#2DD4BF] transition-colors">Inicio</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/documentacao-ambiental" className="hover:text-[#2DD4BF] transition-colors">Documentacao Ambiental</Link>
+            <Link to="/documentacao-ambiental" className="hover:text-[#2DD4BF] transition-colors">Documentação Ambiental</Link>
             <ChevronRight className="w-3 h-3" />
             <span className="text-[#2DD4BF]">MTR</span>
           </div>
           <div className="flex items-center gap-3 mb-4">
             <FileCheck className="w-8 h-8 text-[#2DD4BF]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Documentacao Obrigatoria</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#2DD4BF]">Documentação Obrigatória</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            MTR - Manifesto de Transporte de Residuos
+            MTR - Manifesto de Transporte de Resíduos
           </h1>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl">
-            Documento obrigatorio que rastreia o residuo desde a origem ate a destinacao final. Emissao e suporte completo pela Usina Recicla.
+            Documento obrigatório que rastreia o residuo desde a origem ate a destinação final. Emissão e suporte completo pela Usina Recicla.
           </p>
         </div>
       </section>
@@ -36,27 +36,27 @@ export default function MtrPage() {
                   O Que e o MTR
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  O MTR (Manifesto de Transporte de Residuos) e o documento eletronico emitido pelo Sistema Nacional de Informacoes sobre a Gestao de Residuos Solidos (SINIR). Funciona como um "passaporte" do residuo, registrando informacoes sobre o gerador, o transportador, o tipo e quantidade de residuo, e a unidade de destinacao final.
+                  O MTR (Manifesto de Transporte de Resíduos) e o documento eletrônico emitido pelo Sistema Nacional de Informacoes sobre a Gestão de Resíduos Sólidos (SINIR). Funciona como um "passaporte" do residuo, registrando informações sobre o gerador, o transportador, o tipo e quantidade de residuo, e a unidade de destinação final.
                 </p>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  Desde 2021, a emissao do MTR e obrigatoria em todo o territorio nacional, conforme a Portaria MMA 280/2020. A Usina Recicla cuida de toda a emissao e gestao do MTR para seus clientes.
+                  Desde 2021, a emissão do MTR e obrigatória em todo o território nacional, conforme a Portaria MMA 280/2020. A Usina Recicla cuida de toda a emissão e gestao do MTR para seus clientes.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Por Que o MTR e Obrigatorio
+                  Por Que o MTR e Obrigatório
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  O MTR garante a rastreabilidade completa do residuo, desde sua geracao ate a destinacao final. Sem o MTR, nao e possivel comprovar que o residuo foi destinado de forma ambientalmente correta, expondo a empresa geradora a passivos ambientais e sancoes legais.
+                  O MTR garante a rastreabilidade completa do residuo, desde sua geracao ate a destinação final. Sem o MTR, não é possivel comprovar que o residuo foi destinado de forma ambientalmente correta, expondo a empresa geradora a passivos ambientais e sanções legais.
                 </p>
                 <div className="mt-6 space-y-3">
                   {[
-                    "Obrigatorio pela Politica Nacional de Residuos Solidos (Lei 12.305/2010)",
-                    "Emissao eletroncia pelo sistema SINIR desde 2021",
+                    "Obrigatório pela Política Nacional de Residuos Sólidos (Lei 12.305/2010)",
+                    "Emissão eletroncia pelo sistema SINIR desde 2021",
                     "Necessario para todas as operacoes de transporte de residuos",
                     "Comprova a rastreabilidade da cadeia gerador-transportador-destinador",
-                    "Vinculado ao Inventario Nacional de Residuos Solidos",
+                    "Vinculado ao Inventario Nacional de Residuos Sólidos",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <CheckCircle className="w-4 h-4 text-[#0D9488] shrink-0 mt-0.5" />
@@ -71,18 +71,18 @@ export default function MtrPage() {
                   Quem Precisa Emitir o MTR
                 </h2>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  Toda pessoa fisica ou juridica que gere residuos sujeitos a elaboracao de Plano de Gerenciamento de Residuos Solidos e obrigada a emitir o MTR. Isso inclui:
+                  Toda pessoa fisica ou juridica que gere residuos sujeitos a elaboracao de Plano de Gerenciamento de Residuos Sólidos e obrigada a emitir o MTR. Isso inclui:
                 </p>
                 <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
                     "Industrias de todos os portes",
                     "Comercios de grande porte",
                     "Prestadores de servicos publicos",
-                    "Empresas de construcao civil",
-                    "Servicos de saude",
+                    "Empresas de construção civil",
+                    "Serviços de saúde",
                     "Postos de combustivel",
                     "Industrias alimenticias",
-                    "Empresas quimicas e farmaceuticas",
+                    "Empresas químicas e farmaceuticas",
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-2 text-sm text-slate-700">
                       <div className="w-1.5 h-1.5 bg-[#0D9488] shrink-0"></div>
@@ -98,9 +98,9 @@ export default function MtrPage() {
                 </h2>
                 <div className="mt-6 space-y-4">
                   {[
-                    { step: "01", text: "Cadastro e orientacao no sistema SINIR" },
-                    { step: "02", text: "Classificacao correta dos residuos" },
-                    { step: "03", text: "Emissao do MTR antes de cada coleta" },
+                    { step: "01", text: "Cadastro e orientação no sistema SINIR" },
+                    { step: "02", text: "Classificação correta dos residuos" },
+                    { step: "03", text: "Emissão do MTR antes de cada coleta" },
                     { step: "04", text: "Acompanhamento do recebimento na destinacao" },
                     { step: "05", text: "Arquivamento e gestao dos manifestos" },
                   ].map((item) => (
@@ -119,10 +119,10 @@ export default function MtrPage() {
                 </h2>
                 <Accordion type="single" collapsible className="mt-6 space-y-3">
                   {[
-                    { q: "O MTR e gratuito?", a: "Sim, a emissao do MTR pelo sistema SINIR e gratuita para todos os geradores de residuos." },
-                    { q: "O MTR substitui o CADRI?", a: "Nao. O MTR e o CADRI sao documentos complementares. O CADRI autoriza a movimentacao, enquanto o MTR rastreia o transporte efetivo." },
-                    { q: "Qual a penalidade por nao emitir o MTR?", a: "A ausencia do MTR durante o transporte configura irregularidade ambiental, com multas, apreensao do veiculo e responsabilizacao do gerador, transportador e destinador." },
-                    { q: "O MTR precisa ser emitido a cada coleta?", a: "Sim. O MTR deve ser emitido a cada operacao de transporte de residuos, vinculado aquela operacao especifica." },
+                    { q: "O MTR e gratuito?", a: "Sim, a emissão do MTR pelo sistema SINIR e gratuita para todos os geradores de residuos." },
+                    { q: "O MTR substitui o CADRI?", a: "Não. O MTR e o CADRI sao documentos complementares. O CADRI autoriza a movimentacao, enquanto o MTR rastreia o transporte efetivo." },
+                    { q: "Qual a penalidade por não émitir o MTR?", a: "A ausencia do MTR durante o transporte configura irregularidade ambiental, com multas, apreensão do veículo e responsabilização do gerador, transportador e destinador." },
+                    { q: "O MTR precisa ser emitido a cada coleta?", a: "Sim. O MTR deve ser emitido a cada operação de transporte de residuos, vinculado aquela operação específica." },
                   ].map((faq, i) => (
                     <AccordionItem key={i} value={`mtr-faq-${i}`} className="bg-white border border-slate-200 px-5">
                       <AccordionTrigger className="text-left font-bold text-[#1E293B] hover:text-[#0D9488] py-4">{faq.q}</AccordionTrigger>
@@ -143,7 +143,7 @@ export default function MtrPage() {
                     { icon: Factory, text: "Dados do gerador de residuos" },
                     { icon: Truck, text: "Dados do transportador" },
                     { icon: ClipboardCheck, text: "Tipo e quantidade do residuo" },
-                    { icon: FileCheck, text: "Dados da destinacao final" },
+                    { icon: FileCheck, text: "Dados da destinação final" },
                   ].map((item) => (
                     <div key={item.text} className="flex items-center gap-3">
                       <item.icon className="w-5 h-5 text-[#2DD4BF] shrink-0" />
@@ -158,7 +158,7 @@ export default function MtrPage() {
                   Precisa Emitir MTR?
                 </h3>
                 <p className="mt-3 text-white/80 text-sm">
-                  A Usina Recicla cuida de toda a emissao e gestao do MTR para sua empresa.
+                  A Usina Recicla cuida de toda a emissão e gestao do MTR para sua empresa.
                 </p>
                 <a
                   href="https://wa.me/5519971636969?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20para%20emiss%C3%A3o%20de%20MTR."
@@ -173,17 +173,17 @@ export default function MtrPage() {
 
               <div className="bg-white border border-slate-200 p-8">
                 <h3 className="text-lg font-bold text-[#1E293B] uppercase tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Documentacao Relacionada
+                  Documentação Relacionada
                 </h3>
                 <div className="mt-4 space-y-3">
                   <Link to="/cadri-certificado-movimentacao-residuos" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
                     <ChevronRight className="w-4 h-4" /> CADRI - Certificado CETESB
                   </Link>
                   <Link to="/documentacao-ambiental" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Documentacao Ambiental Completa
+                    <ChevronRight className="w-4 h-4" /> Documentação Ambiental Completa
                   </Link>
                   <Link to="/servicos" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#0D9488] transition-colors">
-                    <ChevronRight className="w-4 h-4" /> Todos os Servicos
+                    <ChevronRight className="w-4 h-4" /> Todos os Serviços
                   </Link>
                 </div>
               </div>
