@@ -1,0 +1,66 @@
+/* App-level styles - minimal, most in Tailwind */
+.App {
+  min-height: 100vh;
+}
+
+/* Service card hover effect */
+.service-card-img {
+  transition: transform 0.5s ease;
+}
+.service-card:hover .service-card-img {
+  transform: scale(1.05);
+}
+
+/* Counter animation */
+.counter-number {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Blog card hover */
+.blog-card {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-card:hover {
+  border-color: var(--brand);
+  box-shadow: 0 4px 24px rgba(13, 148, 136, 0.1);
+}
+
+/* Navigation active link */
+.nav-link-active {
+  color: #0D9488 !important;
+  border-bottom: 2px solid #0D9488;
+}
+
+/* Mobile menu */
+.mobile-menu-enter {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+/* FAQ answer expand */
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+/* Image lazy loading placeholder */
+.img-placeholder {
+  background: linear-gradient(110deg, #e2e8f0 8%, #f1f5f9 18%, #e2e8f0 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
